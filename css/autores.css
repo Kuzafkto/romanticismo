@@ -1,0 +1,85 @@
+/*********************************************************/
+/*     Web del romanticismo - hoja de estilo de autores  */
+/*                Autor: Marco Valente                   */
+/*               Version 1.0 - 3/11/2022                 */
+/******************************************************   /
+
+/******************** estilo general ******************** */
+
+
+@font-face { 
+  font-family: titles;
+  src: url('./../fonts/Blaka-Regular.ttf');/* enlaza el archivo*/
+}
+
+@font-face {
+font-family: bodytext;
+src: url('./../fonts/Inter-Variable.ttf');/* enlaza el archivo*/
+}
+
+html{
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: bodytext;
+  font-size: 1.3em;
+  /*background-color: aquamarine;*/
+  background-image: url('../images/piratepattern.jpg');
+  box-sizing: border-box; /*para que cuente en el width, desde el borde hacia adentro*/
+
+}
+
+#wrapper{
+  width:80%;
+  padding:1%;
+  background-color:white;
+  margin:auto; /*centramos*/
+}
+
+
+
+h1,h2,h3 {
+  font-family: titles;
+    font-size: 4rem;
+    text-align:center;
+    text-decoration:underline;
+}
+
+p{
+  text-align:justify;
+  text-indent:1.3em;
+
+}
+#espronceda{
+float: right; /* así consigo que tenga el texto alrededor*/    
+padding: 10px;
+width:20%;
+}
+
+.floatcleaner{
+  clear:both;/*Anula el "apilamiento" de contenidos creado por float*/
+}
+/************************************ Media queries ***************************************/
+
+@media only screen and (width<=900px){
+  /*Se modifican los cambios uno a uno*/
+
+  #espronceda{
+    width:50%;
+  }
+}
+
+@media only screen and (width<=500px){
+  #wrapper{
+    width:100%;
+    padding:0.3%;
+    border-radius:5px;
+  }
+
+  #espronceda{
+    width: 100%;
+    padding: 0 0 15px 0;
+  }
+}

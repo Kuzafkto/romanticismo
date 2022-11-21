@@ -1,0 +1,38 @@
+/*********************************************************/
+/*     Web del romanticismo - hoja de estilo de poema    */
+/*                Autor: Marco Valente                   */
+/*               Version 1.0 - 7/11/2022                 */
+/******************************************************   /
+
+/******************** estilo general ******************** */
+
+@font-face {
+    font-family: writing;
+    src: url('../fonts/Caveat.ttf');
+}
+
+body{
+    font-family: writing;
+    font-size: 1.4em;
+    background-image: url('../images/map.jpeg');
+    background-repeat:no-repeat;
+    background-color:#E5BD90;
+    background-size: cover;
+}
+#wrapper{
+    margin-left: 0.2%;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.703);
+    
+}
+#wrapper a{
+    color:black;
+
+}
+
+#wrapper a:hover{
+    color:green;
+}
+
+/*a:hover es una PSEUDOCLASE: al poner el raton encima, hay un comportamiento dinamico desde el estilo sin necesidad de javascript*/
+

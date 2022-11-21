@@ -1,0 +1,134 @@
+/*********************************************************/
+/*     Web del romanticismo - hoja de estilo de index    */
+/*                Autor: Marco Valente                   */
+/*               Version 1.0 - 3/11/2022                 */
+/******************************************************   /
+
+/******************** estilo general ******************** */
+
+@font-face {
+    font-family: texto;
+    src: url('../fonts/Inter-Variable.ttf');
+}
+
+@font-face {
+    font-family: title;
+    src: url('../fonts/Blaka-Regular.ttf');
+}
+
+*{box-sizing: border-box;}
+body{
+    background-color: rgb(88,73 ,73 );
+    font-family: texto;
+
+}
+
+#wrapper{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+/*********************************Hero section v1*******************************************/
+
+#hero{
+    background-image: url(./../images/wanderer-above-the-sea-fog-friedrich.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 20px;
+    font-family: title;
+    font-size: 3.5rem;
+}
+
+#titulo{
+    background-color: rgba(255,255 ,255 ,0.25);
+    margin-top:20%;
+    border-radius: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    backdrop-filter: blur(5px);/*Al fondo le aplica un filtro blur*/
+}
+
+/******************************************HERO SECTION V2***************************************/
+
+#rainVideo {
+    /*position: fixed;*/
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #titulo2 {
+    /*position: fixed;*/
+    position: relative;/**El titulo esta al mismo nivel que el video, no dentro del mismo**/
+    top: -32vh;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 23vh;
+    padding: 20px;
+  }
+
+  /******************************************HERO SECTION V3***************************************/
+
+  #hero3{
+    background-color: #0099ff;/*esto es un rectangulo azuk*/
+    height: 40vh;
+    position: relative;
+  }
+
+  #titulo3{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    /*************************************Trucazo***********************************************/
+    transform:translate(-50%,-50%);
+    /***********************************Fin Trucazo*********************************************/
+    font-size:4rem;
+    font-family: title;
+    color:white;
+    font-weight: bold;
+
+  }
+    /******************************************HERO SECTION V3***************************************/
+  /******************************************HERO SECTION V4 con imagen de HAIKEY***************************************/
+
+#hero4{
+    background-image: url('../images/low-poly-grid-haikei.svg');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#titulo4{
+    font-size:3rem;
+    font-weight: bold;
+    backdrop-filter:blur(5px);
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 40%;
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2rem;
+}
+  /******************************************HERO SECTION V4 con imagen de HAIKEY***************************************/
+
+/***************************************Media Query******************************************************/
+@media only screen and (width<=1000px) {
+    #wrapper{width: 100%;
+            font-size: 2rem;
+    }
+}
+@media only screen and (width<=600px) {
+    #titulo{width: 80%;
+            font-size: 2.5rem;
+    }
+}
